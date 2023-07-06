@@ -83,6 +83,11 @@ module.exports = {
         start_url: 'index.html'
     },
 
+    performance: {
+        maxEntrypointSize: 512000,
+        maxAssetSize: 512000
+    },
+
     build: {
         vendor: [
             'vue-i18n',
