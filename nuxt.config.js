@@ -83,11 +83,6 @@ module.exports = {
         start_url: 'index.html'
     },
 
-    performance: {
-        maxEntrypointSize: 512000,
-        maxAssetSize: 512000
-    },
-
     build: {
         vendor: [
             'vue-i18n',
@@ -104,6 +99,8 @@ module.exports = {
         postcss: [
             require('autoprefixer')()
         ],
+
+        maxChunkSize: 300000,
 
         plugins: [
             new MomentLocalesPlugin({
