@@ -101,7 +101,7 @@ module.exports = {
         ],
 
         maxChunkSize: 300000,
-
+        standalone: false,
         plugins: [
             new MomentLocalesPlugin({
                 localesToKeep: ['es-us', 'hr'],
